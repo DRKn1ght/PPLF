@@ -11,5 +11,5 @@ rotate_left(L, 0, L).
 rotate_left(L, N, R) :-
     N > 0,
     append(Prefix, Suffix, L),
-    length(Prefix, N),
-    append(Suffix, Prefix, R).
+    append(Suffix, Prefix, R),
+    length(Prefix, N).
